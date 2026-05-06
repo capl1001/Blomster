@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  padding: 5px;
+}
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 10px;
+}
+.img2 {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+.img3 {
+  grid-column: span 2;
+}
+@media (width< 800px) {
+  .grid_1-1-1 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .img2 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .img3 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .grid_1-1 {
+    grid-template-columns: 1fr;
+  }
+  .brødtekst {
+    grid-row: 1;
+  }
+  .logo {
+    width: 85px;
+    height: auto;
+  }
+}
